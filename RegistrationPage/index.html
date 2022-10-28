@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registration form</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="regform">
+            <h1>Registration Form</h1>
+        </div>
+        <div class="main">
+            <form action="">
+                <div id="name">
+                    <h2 class="name">Name</h2>
+                    <input class="firstname" type="text" name="first_name"
+                        required><br>
+                    <label class="firstlabel" for="">First Name</label>
+                    <input class="lastname" type="text" name="last_name"
+                        required>
+                    <label class="lastlabel" for="">Last Name</label>
+                </div>
+                <h2 class="name">Date of Birth</h2>
+                <input class="dob" type="date" name="dob" required>
+                <h2 class="name">Email</h2>
+                <input class="email" type="email" name="email" required>
+                <h2 class="name">Phone</h2>
+                <input class="code" type="text" name="area_code"
+                    pattern="[+]{1}[0-9]{3}" placeholder="+000">
+                <label class="area-code" for="">Area Code</label>
+                <input class="number" type="tel" name="phone-number"
+                    minlength="8" required>
+                <label class="phone-number" for="">Phone Number</label>
+                <h2 class="name">Gender</h2>
+                <select name="subject" class="option">
+                    <option disabled="disabled" selected="selected">--select
+                        your gender</option>
+                    <option value="">male</option>
+                    <option value="">female</option>
+                    <option value="">prefer not to say</option>
+                </select>
+                <input type="color" name="favcolor" id="favcolor">
+                <label for="favcolor" class="favcolor">Select your fav. color</label>
+                <input class="button" type="submit" value="submit">
+                <div id="registered"><p>Already registered? Click <a
+                            href="login.html">here</a> to sign in</p></div>
+                <!-- <button type="submit"> <a href="login.html" target="_blank">Register</a></button> -->
+            </form>
+        </div>
+    </body>
+</html>
